@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduation Announcement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-green-50 min-h-screen">
+    <div class="container mx-auto px-4 py-12">
+        <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-md overflow-hidden transition-all duration-500 hover:shadow-xl">
+            <div class="p-8">
+                <div class="text-center mb-8">
+                    <i class="logo-wrapper">
+                        <img src="provinsi.png" alt="logo pemerintah" width="60">
+                        <img src="sekolah.png" alt="logo pemerintah" width="50">
+                    </i>
+                    <h1 class="text-4xl font-bold text-gray-800 font-playfair">Pengumuman</h1>
+                    <p class="text-lg text-gray-600 mt-2" id="graduationStatus">Status Kelulusan</p>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="p-6 rounded-lg" id="panelStatus">
+                        <h2 class="text-2xl font-semibold mb-2" id="studentName">John Doe</h2>
+                        <p class="text-blue-600" >Jurusan <font id="jurusan"></font></p>
+                    </div>
+                    
+                    <div class="bg-blue-100 p-6 rounded-lg" id="detailLulus1">
+                        <h3 class="text-xl font-medium text-blue-800 mb-2">Detail waktu Kelulusan</h3>
+                        <p class="text-grey-600"><i class="fas fa-calendar-day mr-2"></i> 05 Mei 2025</p>
+                        <p class="text-grey-600"><i class="fas fa-university mr-2"></i> SMK Negeri 4 Wajo</p>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <a href="login.html" class="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105">
+                            Kembali
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="confetti" class="fixed inset-0 pointer-events-none"></div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
